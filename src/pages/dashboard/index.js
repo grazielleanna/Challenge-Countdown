@@ -65,6 +65,7 @@ const Dashboard = () => {
                                     'aria-label': 'change date',
                                 }}
                                 style={{ color: '#191918' }}
+                                type="tel"
                                 required
                             />
                         </MuiPickersUtilsProvider>

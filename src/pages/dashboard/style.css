@@ -1,0 +1,58 @@
+#dashboard{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#dashboard .container .item h1{
+    font-size: 3.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#dashboard .container .item .text{
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+    color: #BABABA;
+    margin-bottom: 1rem;
+}
+
+#dashboard .container .item form input{
+    background-color: #191A18;
+    padding: 1.3rem 2rem 1.3rem 2rem;
+    border-radius: 1.6rem;
+    border: none;
+    outline: 0;
+    color: #BABABA;
+    font-size: 1.5rem;
+}
+
+#dashboard .container .item form input::placeholder{
+    color: #A3A3A3;
+    font-weight: 600;
+}
+
+#dashboard .container .item form button{
+    padding: .4rem 4.5rem;
+    background-color: #21EB00;
+    color: #000;
+    border-radius: 1.6rem;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+@media (max-width: 320px){
+    #dashboard .container .item form button.submit{
+        font-size: 1.5rem;
+        padding: 0.4rem 3rem !important;
+    }
+}
+
+@media (max-width: 767px){
+    #dashboard .container .item form button.submit{
+        padding: .4rem 2.5rem;
+    }
+}

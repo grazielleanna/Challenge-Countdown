@@ -1,0 +1,23 @@
+.MuiFormLabel-root.Mui-focused{
+    color: transparent !important;
+}
+
+.MuiInput-underline:after{
+    border-bottom: none !important;
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before{
+    border-bottom: none !important;
+}
+
+form > div > div{
+    background: #191A18;
+    border-radius: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+form > div > div button{
+    padding: 12px !important;
+    border-radius: 50% !important;
+    margin-right: 1rem !important;
+}

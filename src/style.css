@@ -1,0 +1,23 @@
+body{
+    background-color: #000;
+    color: #21EB00;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(000,000,000, .1);
+    border-radius: 20px;
+  }
+
+#root{
+    height: 100vh;
+}

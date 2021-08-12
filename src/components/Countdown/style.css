@@ -1,0 +1,18 @@
+.item > div{
+    margin: 2rem auto;
+}
+
+.item > div .time-wrapper{
+    text-align: center;
+
+}
+
+.item > div .time-wrapper .time{
+    color: #FFF;
+    font-size: 4rem;
+}
+
+.item > div .time-wrapper .dimension{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}

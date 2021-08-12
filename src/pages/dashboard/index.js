@@ -23,7 +23,7 @@ const Dashboard = () => {
     }
 
     function disableButton() {
-        setIsFormValid(true);
+        setIsFormValid(false);
     }
 
     function handleSubmit(model) {
@@ -41,6 +41,14 @@ const Dashboard = () => {
             Cookies.set('endtime', model.date);
             history.push('/countdown');
             setLoading(false);
+        }else{
+            Swal.fire({
+                title: 'Ops!',
+                icon: 'error',
+                text: 'Informe uma data válida.'
+            }); 
+            setLoading(false);
+            return false;
         }
     }
 

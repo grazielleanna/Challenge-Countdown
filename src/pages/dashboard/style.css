@@ -44,6 +44,10 @@
     font-size: 2rem;
 }
 
+#dashboard .container .item form button:disabled{
+    background-color: rgba(33, 235, 0, .4);
+}
+
 @media (max-width: 320px){
     #dashboard .container .item form button.submit{
         font-size: 1.5rem;

@@ -27,18 +27,21 @@ const Dashboard = () => {
     }
 
     function handleSubmit(model) {
+        console.log(model.date)
         setLoading(true);
-        if(model.date < moment().format()){
+        if(model.date === 'Invalid date'){
             Swal.fire({
                 title: 'Ops!',
                 icon: 'error',
                 text: 'Data inválida. Informe uma data posterior a atual.'
-            });
-        }else{
+            }); 
+            setLoading(false);
+            return false;
+        }else if(model.date > moment().format()){
             Cookies.set('endtime', model.date);
             history.push('/countdown');
+            setLoading(false);
         }
-        setLoading(false);
     }
 
     return (
@@ -62,6 +65,7 @@ const Dashboard = () => {
                                     'aria-label': 'change date',
                                 }}
                                 style={{ color: '#191918' }}
+                                required
                             />
                         </MuiPickersUtilsProvider>
 

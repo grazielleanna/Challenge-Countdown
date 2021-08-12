@@ -1,9 +1,9 @@
 # Challenge Countdown
 
-Este projeto foi desenvolvido com base no desafio Contador do [DevChallenge](https://www.devchallenge.com.br/c)
+Este projeto foi desenvolvido com base no desafio Contador do [DevChallenge](https://www.devchallenge.com.br/c).
 
 ## Tecnologia Utilizada
-[ReactJS](https://reactjs.org/)
+### * [ReactJS](https://reactjs.org/)
 
 ## Telas do Projeto
 <div style="display: flex; flex-direction: row; flex-wrap: wrap">
@@ -19,4 +19,5 @@ Aplicação para contar quantos dias faltam para chegar a uma determinada data e
 
 * Ao finalizar, digite ``yarn start`` e acesse [http://localhost:3000](http://localhost:3000) para visualizar a aplicação funcionando no seu navegador.
 
-Feito com carinho por [Anna Grazielle](https://github.com/grazielleanna) 🚀
+## Desenvolvimento
+Projeto feito com carinho por [Grazielle Conceição](https://github.com/grazielleanna) 🚀

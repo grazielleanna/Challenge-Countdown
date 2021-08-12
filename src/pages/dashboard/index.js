@@ -9,6 +9,8 @@ import MomentUtils from '@date-io/moment';
 import InputDateKeyboard from '../../components/Input';
 
 import './style.css';
+import moment from 'moment';
+import Swal from 'sweetalert2';
 
 const Dashboard = () => {
     const [isFormValid, setIsFormValid] = useState(false);
@@ -26,9 +28,17 @@ const Dashboard = () => {
 
     function handleSubmit(model) {
         setLoading(true);
-        Cookies.set('endtime', model.date);
-        history.push('/countdown');
-        setLoading(false)
+        if(model.date < moment().format()){
+            Swal.fire({
+                title: 'Ops!',
+                icon: 'error',
+                text: 'Data inválida. Informe uma data posterior a atual.'
+            });
+        }else{
+            Cookies.set('endtime', model.date);
+            history.push('/countdown');
+        }
+        setLoading(false);
     }
 
     return (
@@ -45,7 +55,7 @@ const Dashboard = () => {
 
                         <MuiPickersUtilsProvider utils={MomentUtils}>
                             <InputDateKeyboard
-                                format="DD/MM/yy"
+                                format="DD/MM/yyyy"
                                 name="date"
                                 variant="outlined"
                                 KeyboardButtonProps={{
